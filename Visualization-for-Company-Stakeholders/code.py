@@ -59,10 +59,10 @@ graduate = pd.DataFrame(data[data["Education"] == "Graduate"])
 not_graduate = pd.DataFrame(data[data["Education"] == "Not Graduate"])
 
 #Plotting density plot for 'Graduate'
-graduate.plot(kind = "density", label = "Graduate")
+graduate["LoanAmount"].plot(kind = "density", label = "Graduate")
 
 #Plotting density plot for 'Graduate'
-not_graduate.plot(kind = "density", label = "Not Graduate")
+not_graduate["LoanAmount"].plot(kind = "density", label = "Not Graduate")
 
 #For automatic legend display
 
